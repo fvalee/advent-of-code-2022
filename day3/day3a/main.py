@@ -1,8 +1,8 @@
 def calculate_priority(c1, c2):
-    dict_c1 = set(c1)
-    dict_c2 = set(c2)
+    set_c1 = set(c1)
+    set_c2 = set(c2)
 
-    common = dict_c1 & dict_c2
+    common = set_c1 & set_c2
     item = next(iter(common))
 
     return ord(item) - 96 if item.islower() else ord(item) - 38

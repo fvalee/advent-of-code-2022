@@ -1,9 +1,9 @@
 def calculate_priority(r1, r2, r3):
-    dict_r1 = set(r1)
-    dict_r2 = set(r2)
-    dict_r3 = set(r3)
+    set_r1 = set(r1)
+    set_r2 = set(r2)
+    set_r3 = set(r3)
 
-    common = dict_r1 & dict_r2 & dict_r3
+    common = set_r1 & set_r2 & set_r3
     item = next(iter(common))
 
     return ord(item) - 96 if item.islower() else ord(item) - 38
